@@ -1,5 +1,5 @@
 **Linux:**
-  [How To Setup Your Own VPN With PPTP (FreeBSD is included)] (https://www.digitalocean.com/community/tutorials/how-to-setup-your-own-vpn-with-pptp)
+  [How To Setup Your Own VPN With PPTP (FreeBSD is included)](https://www.digitalocean.com/community/tutorials/how-to-setup-your-own-vpn-with-pptp)
   [How To Set Up Apache Virtual Hosts on Debian 8] (https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-debian-8)
   Apache SSL:
     [Apache SSL1] (https://www.debiantutorials.com/create-your-private-certificate-authority-ca/)
