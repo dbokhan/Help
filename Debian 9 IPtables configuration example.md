@@ -51,7 +51,7 @@ It allows to save a current iptables configuration into file.
 
 ```iptables-restore < "file_name(without_quotes)”```
 
-It allows to save my file into current iptables configuration file.
+It allows to save my file into a current iptables configuration file.
 
 ***
 
