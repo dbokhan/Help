@@ -7,3 +7,5 @@
     - [Apache SSL3](https://gist.github.com/croxton/ebfb5f3ac143cd86542788f972434c96)
 - **Cisco:**
   - [SSH Public Key Authentication on Cisco IOS](https://networklessons.com/uncategorized/ssh-public-key-authentication-cisco-ios/)
+- **Git**
+  - [Markdown: Syntax](https://daringfireball.net/projects/markdown/syntax)
