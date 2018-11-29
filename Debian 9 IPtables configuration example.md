@@ -40,10 +40,11 @@
 
 **COMMIT** closes a chain section.
 ***
+<p>
 **Save “running-config” of iptables into my own file:**
 ```iptables-save > “file_name(without_quotes)”```
 It allows to save a current iptables configuration into file.
-
+</p>
 **Save from file into “running-config“:**
 ```iptables-restore < "file_name(without_quotes)”```
 It allows to save my file into current iptables configuration file.
