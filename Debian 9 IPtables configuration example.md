@@ -39,3 +39,18 @@
 ***filter** and ***nat** are chains beginnings.
 
 **COMMIT** closes a chain section.
+***
+**Save “running-config” of iptables into my own file:**
+```iptables-save > “file_name(without_quotes)”```
+It allows to save a current iptables configuration into file.
+
+**Save from file into “running-config“:**
+```iptables-restore < "file_name(without_quotes)”```
+It allows to save my file into current iptables configuration file.
+***
+**Add iptables rules into startup:**
+I can create a file on path: /etc/network/if-pre-up.d/iptables and write here a script.
+```
+#!/bin/sh
+/sbin/iptables-restore < “iptabls_config_file_name(without_quotes)”
+```
