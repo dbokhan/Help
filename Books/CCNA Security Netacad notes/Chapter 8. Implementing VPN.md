@@ -35,7 +35,7 @@
 
 Это гибридный протокол, реализующий протоколы обмена ключами на базе платформы Internet Security Association Key Management Protocol (ISAKMP). ISAKMP определяет формат сообщений, механизм протокола обмена ключами и процесс согласования.
 
->Часто Ciso использует названия ISAKMP и IKE как взаимозаменяемые, но на самом деле IKE включает в себя функции нескольких протоколов, а именно: ISAKMP, SKEME и OAKLEY. [Ссылка](https://networkengineering.stackexchange.com/questions/1/whats-the-difference-between-ike-and-isakmp)
+>Часто Ciso использует названия ISAKMP и IKE как взаимозаменяемые, но на самом деле IKE включает в себя функции нескольких протоколов, а именно: ISAKMP, SKEME и OAKLEY. По факту ISAKMP в Cisco равен IKE Phase 1. [Ссылка](https://networkengineering.stackexchange.com/questions/1/whats-the-difference-between-ike-and-isakmp)
 
 
 IKE использует UDP порт 500.
@@ -104,5 +104,46 @@ IKE использует UDP порт 500.
 
 Настройка "интересного трафика" для туннеля с помощью ACL:
 
-> (config)# access-list 101 permit ip _<\source network> < wildcard mask > < destination network > < wildcard mask >_ 
+> (config)# access-list 101 permit ip _< source network > < wildcard mask > < destination network > < wildcard mask >_ 
 
+**Задача 2. Настройка IPsec для IKE Phase 2:**
+
+Для фазы 2 необходимо настроить transform-set (набор преобразований для "интересного трафика") в котором будут указаны алгоритм шифрования и хэширования для "интересного трафика" в любом порядке. Например:
+
+> (config)# crypto ipsec transform-set _<название набора преобразований>_ AES128-SHA esp-aes esp-sha-hmac
+
+**Задача 3. Настройка криптокарты для политики IPsec:**
+
+Криптокарты использутся для объединения политик настроенных для IKE Phase 2 (IPsec). Пример настройки:
+
+> (config)# crypto map _<название криптокарты> <порядковый номер политики в криптокарте>_
+
+> (config-crypto-map)# match address _<номер ACL "интересного трафика">_
+
+> (config-crypto-map)# set transform-set _<название набора преобразований>_
+
+> (config-crypto-map)# set peer _< ip address удаленной стороны>_
+
+> (config-crypto-map)# set pfs _<группа DH>_
+
+> (config-crypto-map)# set security-association lifetime seconds 900
+
+Для проверки конфигурации криптокарты:
+
+> \# show crypto map
+
+**Задача 4. Применение политики IPsec:**
+
+> (config-if)# crypto map _<название криптокарты>_
+
+Далее для инициализации процесса установки туннелей пустить трафик продходящий под ACL туннеля.
+
+**Задача 5. Проверка работы туннеля IPsec:**
+
+Проверка IKE Phase 1:
+
+> \# show crypto isakmp sa
+
+Проверка IKE Phase 2:
+
+> \# show crypto ipsec sa
