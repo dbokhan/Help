@@ -104,5 +104,5 @@ IKE использует UDP порт 500.
 
 Настройка "интересного трафика" для туннеля с помощью ACL:
 
-> (config)# access-list 101 permit ip _< source network > < wildcard mask > < destination network > < wildcard mask >_ 
+> (config)# access-list 101 permit ip _<\source network> < wildcard mask > < destination network > < wildcard mask >_ 
 
