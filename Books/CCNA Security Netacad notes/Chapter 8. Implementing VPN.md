@@ -79,15 +79,15 @@ IKE использует UDP порт 500.
 Для настройки новой политики ISAKMP используются следующие команды. Пример:
 
 > (config)# crypto isakmp policy _<приоритет политики от 1 до 10000>_
-
+>
 > (config-isakmp)# hash sha
-
+>
 > (config-isakmp)# authentication pre-share
-
+>
 > (config-isakmp)# group 24
-
+>
 > (config-isakmp)# lifetime 3600
-
+>
 > (config-isakmp)# encyption aes 256
 
 Для запоминания настроек для ISAKMP можно использовать мнемонику - **HAGLE**:
