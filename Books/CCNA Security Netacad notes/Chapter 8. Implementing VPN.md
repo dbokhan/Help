@@ -6,4 +6,4 @@
 
 ## Компоненты сети IPsec VPN и их функционирование
 
-![](IPSec_structure.png)
+![](img\IPSec_structure.png)
