@@ -35,7 +35,7 @@
 
 Это гибридный протокол, реализующий протоколы обмена ключами на базе платформы Internet Security Association Key Management Protocol (ISAKMP). ISAKMP определяет формат сообщений, механизм протокола обмена ключами и процесс согласования.
 
->Часто Ciso использует названия ISAKMP и IKE как взаимозаменяемые, но на самом деле IKE включает в себя функции нескольких протоколов, а именно: ISAKMP, SKEME и OAKLEY. (Ссылка)(https://networkengineering.stackexchange.com/questions/1/whats-the-difference-between-ike-and-isakmp)
+>Часто Ciso использует названия ISAKMP и IKE как взаимозаменяемые, но на самом деле IKE включает в себя функции нескольких протоколов, а именно: ISAKMP, SKEME и OAKLEY. [Ссылка](https://networkengineering.stackexchange.com/questions/1/whats-the-difference-between-ike-and-isakmp)
 
 
 IKE использует UDP порт 500.
@@ -70,20 +70,34 @@ IKE использует UDP порт 500.
 
 Для выполнения этой задачи Cisco IOS поставляет 7 предустановленных настроек, которые можно просмотреть с помощью комманды:
 
-> show crypto isakmp default policy
+> # show crypto isakmp default policy
 
 Стороны начинают пытаться установить согласование с политик с меньшим приоритетом.
 
 Если стандартные политики не устраивают администратора, то необходимо создать новую политику ISAKMP.
 
-Для настройки новой политики ISAKMP используется команда:
+Для настройки новой политики ISAKMP используются следующие команды. Пример:
 
-> crypto isakmp policy _<приоритет политики от 1 до 10000>_
+> (config)# crypto isakmp policy _<приоритет политики от 1 до 10000>_
+> (config-isakmp)# hash sha
+> (config-isakmp)# authentication pre-share
+> (config-isakmp)# group 24
+> (config-isakmp)# lifetime 3600
+> (config-isakmp)# encyption aes 256
 
-Для запоминания следующих настроек для ISAKMP можно использовать мнемонику - **HAGLE**:
+Для запоминания настроек для ISAKMP можно использовать мнемонику - **HAGLE**:
 
 - Hash
 - Authentication
 - Group
 - Lifetime
 - Encryption
+
+Настройка pre-shared key:
+
+> crypto isakmp key _<ключ>_ address <ip address или hostname удаленной стороны>
+
+Настройка "интересного трафика" для туннеля с помощью ACL:
+
+> access-list 101 permit ip _<source network> <wildcard mask> <destination network> <wildcard mask>_ 
+
