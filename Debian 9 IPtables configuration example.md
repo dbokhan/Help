@@ -36,28 +36,24 @@
     COMMIT
 ```
 
-***filter** and ***nat** are chains beginnings.
+***filter** и ***nat** определяют начала цепочек.
 
-**COMMIT** closes a chain section.
+**COMMIT** закрывает цепочки.
 ***
 
-**Save “running-config” of iptables into my own file:**
+**Сохранить “running-config” в мой собственный файл:**
 
 ```iptables-save > “file_name(without_quotes)”```
 
-It allows to save a current iptables configuration into file.
-
-**Save from file into “running-config“:**
+**Сохранить из файла в “running-config“:**
 
 ```iptables-restore < "file_name(without_quotes)”```
 
-It allows to save my file into a current iptables configuration file.
-
 ***
 
-**Add iptables rules into startup:**
+**Добавить правила iptables а автозагрузку:**
 
-I can create a file on path: /etc/network/if-pre-up.d/iptables and write here a script.
+Можно создать файл на пути: /etc/network/if-pre-up.d/iptables и написать там следующий скрипт.
 
 ```
 #!/bin/sh

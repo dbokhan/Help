@@ -46,11 +46,11 @@ IKE использует UDP порт 500.
 
 **Фаза 1** устанавливает SA для безопасного обмена информацией о формировании туннеля следующего протокола (чаще всего IPsec). Эта фаза настраивается на Cisco с помощью: 
 
-> (config)# crypto isakmp policy
+``` (config)# crypto isakmp policy ```
 
 и проверяется: 
 
-> \# show isakmp policy
+``` # show isakmp policy ```
 
 Фаза 1 может быть реализована в двух вариантах:
 - **Main Mode** - более долгий, но безопасный метод. Фаза 1 устанавлявает параметры туннеля несколькими зашифрованными порциями сообщений.
@@ -78,7 +78,7 @@ IKE использует UDP порт 500.
 
 Для выполнения этой задачи Cisco IOS поставляет 7 предустановленных настроек, которые можно просмотреть с помощью комманды:
 
-> \# show crypto isakmp default policy
+``` # show crypto isakmp default policy ```
 
 Стороны начинают пытаться установить согласование с политик с меньшим приоритетом.
 
@@ -86,17 +86,14 @@ IKE использует UDP порт 500.
 
 Для настройки новой политики ISAKMP используются следующие команды. Пример:
 
-> (config)# crypto isakmp policy _<приоритет политики от 1 до 10000>_
->
-> (config-isakmp)# hash sha
->
-> (config-isakmp)# authentication pre-share
->
-> (config-isakmp)# group 24
->
-> (config-isakmp)# lifetime 3600
->
-> (config-isakmp)# encyption aes 256
+```
+(config)# crypto isakmp policy _<приоритет политики от 1 до 10000>_
+(config-isakmp)# hash sha
+(config-isakmp)# authentication pre-share
+(config-isakmp)# group 24
+(config-isakmp)# lifetime 3600
+(config-isakmp)# encyption aes 256
+```
 
 Для запоминания настроек для ISAKMP можно использовать мнемонику - **HAGLE**:
 
