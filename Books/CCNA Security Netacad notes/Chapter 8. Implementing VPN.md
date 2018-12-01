@@ -117,15 +117,15 @@ IKE использует UDP порт 500.
 Криптокарты использутся для объединения политик настроенных для IKE Phase 2 (IPsec). Пример настройки:
 
 > (config)# crypto map _<название криптокарты> <порядковый номер политики в криптокарте>_
-
+>
 > (config-crypto-map)# match address _<номер ACL "интересного трафика">_
-
+>
 > (config-crypto-map)# set transform-set _<название набора преобразований>_
-
+>
 > (config-crypto-map)# set peer _< ip address удаленной стороны>_
-
+>
 > (config-crypto-map)# set pfs _<группа DH>_
-
+>
 > (config-crypto-map)# set security-association lifetime seconds 900
 
 Для проверки конфигурации криптокарты:
