@@ -150,4 +150,4 @@ IKE использует UDP порт 500.
 
 ``` # show crypto ipsec sa ```
 
-[Лабораторная работа](https://static-course-assets.s3.amazonaws.com/CCNAS2/ru/course/files/8.4.1.3%20Lab%20-Configure%20Site-to-Site%20VPN%20using%20CLI.pdf) 
+[Лабораторная работа. Настройка Site-to-Site VPN с помощью Cisco IOS Crypto map](https://static-course-assets.s3.amazonaws.com/CCNAS2/ru/course/files/8.4.1.3%20Lab%20-Configure%20Site-to-Site%20VPN%20using%20CLI.pdf) 
