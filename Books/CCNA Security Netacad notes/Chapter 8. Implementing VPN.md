@@ -87,7 +87,7 @@ IKE использует UDP порт 500.
 Для настройки новой политики ISAKMP используются следующие команды. Пример:
 
 ```
-(config)# crypto isakmp policy _<приоритет политики от 1 до 10000>_
+(config)# crypto isakmp policy <приоритет политики от 1 до 10000>
 (config-isakmp)# hash sha
 (config-isakmp)# authentication pre-share
 (config-isakmp)# group 24
@@ -105,7 +105,7 @@ IKE использует UDP порт 500.
 
 Настройка pre-shared key:
 
-``` (config)# crypto isakmp key _<ключ>_ address <ip address или hostname удаленной стороны> ```
+``` (config)# crypto isakmp key <ключ> address <ip address или hostname удаленной стороны> ```
 
 Настройка "интересного трафика" для туннеля с помощью ACL:
 
@@ -122,11 +122,11 @@ IKE использует UDP порт 500.
 Криптокарты использутся для объединения политик настроенных для IKE Phase 2 (IPsec). Пример настройки:
 
 ```
-(config)# crypto map _<название криптокарты> <порядковый номер политики в криптокарте>_
-(config-crypto-map)# match address _<номер ACL "интересного трафика">_
-(config-crypto-map)# set transform-set _<название набора преобразований>_
-(config-crypto-map)# set peer _< ip address удаленной стороны>_
-(config-crypto-map)# set pfs _<группа DH>_
+(config)# crypto map <название криптокарты> <порядковый номер политики в криптокарте>
+(config-crypto-map)# match address <номер ACL "интересного трафика">
+(config-crypto-map)# set transform-set <название набора преобразований>
+(config-crypto-map)# set peer < ip address удаленной стороны>
+(config-crypto-map)# set pfs <группа DH>
 (config-crypto-map)# set security-association lifetime seconds 900
 ```
 
