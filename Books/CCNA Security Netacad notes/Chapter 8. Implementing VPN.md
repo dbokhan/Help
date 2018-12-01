@@ -105,41 +105,38 @@ IKE использует UDP порт 500.
 
 Настройка pre-shared key:
 
-> (config)# crypto isakmp key _<ключ>_ address <ip address или hostname удаленной стороны>
+``` (config)# crypto isakmp key _<ключ>_ address <ip address или hostname удаленной стороны> ```
 
 Настройка "интересного трафика" для туннеля с помощью ACL:
 
-> (config)# access-list 101 permit ip _< source network > < wildcard mask > < destination network > < wildcard mask >_ 
+``` (config)# access-list 101 permit ip <source network> <wildcard mask> <destination network> <wildcard mask> ```
 
 **Задача 2. Настройка IPsec для IKE Phase 2:**
 
 Для фазы 2 необходимо настроить transform-set (набор преобразований для "интересного трафика") в котором будут указаны алгоритм шифрования и хэширования для "интересного трафика" в любом порядке. Например:
 
-> (config)# crypto ipsec transform-set _<название набора преобразований>_ AES128-SHA esp-aes esp-sha-hmac
+``` (config)# crypto ipsec transform-set <название набора преобразований> AES128-SHA esp-aes esp-sha-hmac ```
 
 **Задача 3. Настройка криптокарты для политики IPsec:**
 
 Криптокарты использутся для объединения политик настроенных для IKE Phase 2 (IPsec). Пример настройки:
 
-> (config)# crypto map _<название криптокарты> <порядковый номер политики в криптокарте>_
->
-> (config-crypto-map)# match address _<номер ACL "интересного трафика">_
->
-> (config-crypto-map)# set transform-set _<название набора преобразований>_
->
-> (config-crypto-map)# set peer _< ip address удаленной стороны>_
->
-> (config-crypto-map)# set pfs _<группа DH>_
->
-> (config-crypto-map)# set security-association lifetime seconds 900
+```
+(config)# crypto map _<название криптокарты> <порядковый номер политики в криптокарте>_
+(config-crypto-map)# match address _<номер ACL "интересного трафика">_
+(config-crypto-map)# set transform-set _<название набора преобразований>_
+(config-crypto-map)# set peer _< ip address удаленной стороны>_
+(config-crypto-map)# set pfs _<группа DH>_
+(config-crypto-map)# set security-association lifetime seconds 900
+```
 
 Для проверки конфигурации криптокарты:
 
-> \# show crypto map
+``` # show crypto map ```
 
 **Задача 4. Применение политики IPsec:**
 
-> (config-if)# crypto map _<название криптокарты>_
+```(config-if)# crypto map <название криптокарты> ```
 
 Далее для инициализации процесса установки туннелей пустить трафик продходящий под ACL туннеля.
 
@@ -147,8 +144,8 @@ IKE использует UDP порт 500.
 
 Проверка IKE Phase 1:
 
-> \# show crypto isakmp sa
+``` # show crypto isakmp sa ```
 
 Проверка IKE Phase 2:
 
-> \# show crypto ipsec sa
+``` # show crypto ipsec sa ```
