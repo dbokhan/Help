@@ -109,20 +109,20 @@ IKE использует UDP порт 500.
 
 Настройка "интересного трафика" для туннеля с помощью ACL:
 
-``` (config)# access-list 101 permit ip <source network> <wildcard mask> <destination network> <wildcard mask> ```
+``` (config)# access-list <номер ACL> permit ip <source network> <wildcard mask> <destination network> <wildcard mask> ```
 
 **Задача 2. Настройка IPsec для IKE Phase 2:**
 
 Для фазы 2 необходимо настроить transform-set (набор преобразований для "интересного трафика") в котором будут указаны алгоритм шифрования и хэширования для "интересного трафика" в любом порядке. Например:
 
-``` (config)# crypto ipsec transform-set <название набора преобразований> AES128-SHA esp-aes esp-sha-hmac ```
+``` (config)# crypto ipsec transform-set <название набора преобразований> esp-aes esp-sha-hmac ```
 
 **Задача 3. Настройка криптокарты для политики IPsec:**
 
 Криптокарты использутся для объединения политик настроенных для IKE Phase 2 (IPsec). Пример настройки:
 
 ```
-(config)# crypto map <название криптокарты> <порядковый номер политики в криптокарте>
+(config)# crypto map <название криптокарты> <порядковый номер политики в криптокарте> ipsec-isakmp
 (config-crypto-map)# match address <номер ACL "интересного трафика">
 (config-crypto-map)# set transform-set <название набора преобразований>
 (config-crypto-map)# set peer < ip address удаленной стороны>
