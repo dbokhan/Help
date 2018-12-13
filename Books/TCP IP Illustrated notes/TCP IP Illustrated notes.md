@@ -11,3 +11,12 @@
 > Устройства хранящие данные в формате отличном от Big-endian должны быть переформатированы перед отправкой по сети.
 >
 > [Big-endian and little-endian terms](https://www.webopedia.com/TERM/B/big_endian.html)
+
+
+**IPv4-mapped IPv6 addresses** - тип записи IPv4 адреса в IPv6 формате. Предназначен для работы IPv4 адресов в приложениях предназначенных только для IPv6.
+
+> Пример адреса:
+>
+> ::FFFF:129.144.52.38
+>
+> [IPv4-mapped IPv6 addresses](https://www.ibm.com/support/knowledgecenter/en/SSLTBW_2.3.0/com.ibm.zos.v2r3.hale001/ipv6d0031001726.htm)
