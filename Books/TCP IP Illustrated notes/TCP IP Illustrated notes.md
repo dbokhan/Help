@@ -1,6 +1,6 @@
 # TCP/IP Illustrated
 
-## Chapter 3. IP
+# TCP/IP Illustrated 1st edition)
 
 **Network byte order** (про физ.ур.) - это последовательность бит при передаче данных по сети. Входит в категорию Big-Endian последовательностей. 
   
@@ -12,6 +12,8 @@
 >
 > [Big-endian and little-endian terms](https://www.webopedia.com/TERM/B/big_endian.html)
 
+# TCP/IP Illustrated 2nd edition)
+## 2. The Internet Address Architecture
 
 **IPv4-mapped IPv6 addresses** - тип записи IPv4 адреса в IPv6 формате. Предназначен для работы IPv4 адресов в приложениях предназначенных только для IPv6.
 
