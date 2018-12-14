@@ -20,3 +20,19 @@
 > Пример адреса: ::FFFF:129.144.52.38
 >
 > [IPv4-mapped IPv6 addresses](https://www.ibm.com/support/knowledgecenter/en/SSLTBW_2.3.0/com.ibm.zos.v2r3.hale001/ipv6d0031001726.htm)
+
+**EUI (Extended Unique Identifier)** - это схема присвоения адресов. Например, EUI-64, EUI-48, MAC-48(Устаревшая). Отличие EUI-64 и EUI-48 в длине адресов.
+
+EUI состоят из двух частей:
+1) OUI (Organizationally Unique Identifier) - часть назначенная IEEE Registration Authority для идентификации производителя. Занимает 24 бита = 3 байта
+2) NIC (Network Interface Controler) - часть идентификации конкретного сетевого адаптера. Занимает всю оставшуюся часть адреса в EUI-48: 24 бита = 3 байта
+
+Первые 2 бита первого байта в OUI определяют:
+-2'ой бит (u бит) - определяет является ли адрес глобальным или назначен администратором:
+--Universally Administered Addresses (UAA) - если бит = 0
+--Locally Administered Addresses (LAA) - если бит = 1
+-1'ый бит (g бит) - определяет является ли адрес юникастовый или мультикастовым:
+--Unicast - если бит = 0
+--Group - если бит = 1
+
+> 
