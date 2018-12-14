@@ -25,6 +25,8 @@
 
 **EUI (Extended Unique Identifier)** - это схема присвоения адресов. Например, EUI-64, EUI-48, MAC-48(Устаревшая). Отличие EUI-64 и EUI-48 в длине адресов.
 
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/MAC-48_Address.svg/800px-MAC-48_Address.svg.png)
+
 EUI состоят из двух частей:
 1) OUI (Organizationally Unique Identifier) - часть назначенная IEEE Registration Authority для идентификации производителя. Занимает 24 бита = 3 байта
 2) NIC (Network Interface Controler) - часть идентификации конкретного сетевого адаптера. Занимает всю оставшуюся часть адреса в EUI-48: 24 бита = 3 байта
