@@ -31,9 +31,9 @@ EUI состоят из двух частей:
 
 Первые 2 бита первого байта в OUI определяют:
 1) 2'ой бит (u бит) - определяет является ли адрес глобальным или назначен администратором:
---Universally Administered Addresses (UAA) - если бит = 0
---Locally Administered Addresses (LAA) - если бит = 1
+-- Universally Administered Addresses (UAA) - если бит = 0
+-- Locally Administered Addresses (LAA) - если бит = 1
 2) 1'ый бит (g бит) - определяет является ли адрес юникастовый или мультикастовым:
---Unicast - если бит = 0
---Group - если бит = 1
+-- Unicast - если бит = 0
+-- Group - если бит = 1
 
