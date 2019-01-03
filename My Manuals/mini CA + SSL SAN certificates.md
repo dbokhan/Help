@@ -69,7 +69,7 @@ openssl req -new -days 365 -key site.key -out site.csr -config san.cnf
 
 - **Опция -config** - позволяет указать файл с расширенными настройками
 
-## 4. Подпись сертификата сайта сертификатом CA
+## 4. Подпись SAN сертификата сертификатом CA
 ```
 openssl x509 -req -days 365 -in site.csr -CA ca.crt -CAkey ca.key -set_serial 01 -extfile san.cnf -extensions req_ext -out site.crt
 ```
