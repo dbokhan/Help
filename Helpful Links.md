@@ -8,5 +8,6 @@
 - **Cisco:**
   - [SSH Public Key Authentication on Cisco IOS](https://networklessons.com/uncategorized/ssh-public-key-authentication-cisco-ios/)
   - [Типы VPN соединений (Семенов Вадим)](https://linkmeup.ru/blog/152.html)
+  - [Cisco IOS](https://drive.google.com/drive/folders/102jxZ9ECpe6ZFtXYdK_81iEVuuFoGOGR)
 - **Git**
   - [Markdown: Syntax](https://daringfireball.net/projects/markdown/syntax)
