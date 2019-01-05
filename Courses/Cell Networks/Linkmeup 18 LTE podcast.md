@@ -12,8 +12,7 @@
 - EPC (Evolved Packet Core)
 - Radio Access Network
 
-[Вместе это называется EPS (Envolved Packet System)]
-(https://img-fotki.yandex.ru/get/6811/83739833.42/0_f5beb_c7d7982_orig.png)
+[Вместе это называется EPS (Envolved Packet System)](https://img-fotki.yandex.ru/get/6811/83739833.42/0_f5beb_c7d7982_orig.png)
 
 Radio Access Network состоит из базовых станций:
 - Базовая станция для LTE называется eNode-B.
@@ -42,8 +41,7 @@ PCRF (Policy and charging rules function) - устройство, которое
 
 
 
-[Стек протоколов использующийся в радио-интерфейсе LTE]
-(https://img-fotki.yandex.ru/get/6802/83739833.42/0_f5bf1_9a71bfcf_orig.png)
+[Стек протоколов использующийся в радио-интерфейсе LTE](https://img-fotki.yandex.ru/get/6802/83739833.42/0_f5bf1_9a71bfcf_orig.png)
 
 Handover - переход абонентов между сотами
 
