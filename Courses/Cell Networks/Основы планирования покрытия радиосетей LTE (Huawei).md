@@ -93,9 +93,9 @@ Dimensioning делится на:
 
 ### Бюджет линка (Link Budget)
 
-Обычно бюджет линка расчитывается только для входящего и выходящего каналов с данными. (PUSCH и PDSCH)
+Обычно бюджет линка расчитывается только для входящего и выходящего **каналов с данными. (PUSCH и PDSCH)**
 
-Что учитывается в параметрах расчета бюджета PDSCH:
+**Что учитывается в параметрах расчета бюджета PDSCH:**
 1. Morphology (Dense Urban / Urban / Suburban / Rural / Highway)
 2. Duplex Mode (FDD / TDD)
 3. User Environment (Indoor / Outdoor)
