@@ -61,6 +61,8 @@ Dimensioning делится на:
 	- 2.4. Планирование соседей
 3. Планирование радио алгоритмов - планирование алгоритмов голоса, handover'а и т.д.
 
+***
+
 ## Основные отличия LTE от 2G/3G
 
 1. LTE имеет более гибкое распределение частот, чем 2G\3G
@@ -71,8 +73,8 @@ Dimensioning делится на:
 ## Алгоритм проведения LTE Coverage Dimensioning
 1. Расчет EIRP (Equivalent Isotropic Radiated Power) т.е. излучаемая мощьность с антенны передатчика и minimum receiver sensitivity т.е. минимальная мощьность приемника.
 2. На основе предыдущего пункта отдельно вычисляются:
-	2.1. Расчитывается Uplink MAPL (Maximum Allowed Path Loss) и радиус соты
-	2.2 Рассчитывается Downlink MAPL и радиус соты
+	- 2.1. Расчитывается Uplink MAPL (Maximum Allowed Path Loss) и радиус соты
+	- 2.2 Рассчитывается Downlink MAPL и радиус соты
 3. Берется минимальный радиус соты вычисленный на предыдущем этапе. Effective cell radios = Min(uplink cell radius, downlink cell radius)
 4. Расчитывается кол-во необзодимых сайтов для покрытия площади кластера. Т.е. площадь покрытия делится на площадь покрытия одного сайта (обычно 3-х секторного) и получаем кол-во сайтов.
 
@@ -114,8 +116,8 @@ Dimensioning делится на:
 	Min Signal Reception Strength (dBm) = Receiver Sensitivity (dBm) - Rx Antenna Gain (dBi) + Rx Cable Loss (dB) + Rx Body Loss (dB) + Interference Margin (dB)
 
 Количество поднесущих (Subcarriers) зависит от полосы пропускания (bandwidth):
-	- Для 20 МГц, Subcarrier Power (dBm) = 46 - 10*lg(12*100) = 15.2dBm
-	- Для 10 МГц, Subcarrier Power (dBm) = 46 - 10*lg(12*50) = 18.2dBm
+- Для 20 МГц, Subcarrier Power (dBm) = 46 - 10*lg(12*100) = 15.2dBm
+- Для 10 МГц, Subcarrier Power (dBm) = 46 - 10*lg(12*50) = 18.2dBm
 
 Tx Antenna Gain (dBi):
 
