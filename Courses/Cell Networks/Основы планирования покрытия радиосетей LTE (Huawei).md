@@ -105,7 +105,7 @@ Dimensioning делится на:
 7. Cell Edge Rate (kbps)
 8. MCS
 
-Расчет **Downlink MAPL**:
+**Расчет Downlink MAPL**:
 
 	MAPL (db) = EIRP pre Subcarrier (dBm) - Min Signal Reception Strangth (dBm) - Penetration loss (dB) - shadow fading margin (dB)
 
@@ -151,5 +151,30 @@ Dimensioning делится на:
 **Penetration loss (dB)** - табличные значения для различных частот и застроек
 
 **Shadow fading margin (dB)** - табличные значения для различных типов застроек
+
+**Расчет Uplink MAPL**:
+
+**Tx Antenna Gain (dBi)** = 0
+
+**Tx Cable Loss (dB)** = 0
+
+**Receiver Sensitivity (dBm)** - чувствительность приемника на стороне eNode-B. 
+	Receiver Sensitivity (dBm) = Thermal noise pre subcarrier (dBm) + Noise figure of eNode-B (dB) + Required SINR (dB)
+
+**Noise figure of eNode-B (dB)** - это табличные значения
+
+**Required SINR (dB)** - считается на основе симуляции (часто это темы дипломных работ студентов)
+
+**Rx Antenna Gain (dBi)** усиление антенны eNode-B
+
+**Rx Cable Loss (dB)** = 0
+
+**Rx Body Loss (dB)** = 0
+
+**Interference Margin (dB)** - результаты симуляции, но обычно это небольшие значения
+
+**Penetration loss (dB)** и **Shadow fading margin (dB)** - аналогичны Downlink
+
+У Huawei есть утилита Radio Network Dimensioning(RND)для LTE планирования. И утилита Genex U-NET.
 
 [Ссылка на видео](https://www.youtube.com/watch?v=H5QplBYu6aE)
