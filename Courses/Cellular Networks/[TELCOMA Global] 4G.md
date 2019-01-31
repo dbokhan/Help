@@ -4,6 +4,8 @@
 
 4G полностью пакетно-коммутируемая технология (Fully Packet-Switched Network).
 
+![](https://upload.wikimedia.org/wikipedia/commons/d/d7/Evolved_Packet_Core.svg)
+
 **Архитектура 4G - System Architecture Evolution (SAE) включает:**
 1. Radio Network - E-UTRAN (Evolved-Universal Terrestrial Radio Network)
 
