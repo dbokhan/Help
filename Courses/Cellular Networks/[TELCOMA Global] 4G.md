@@ -1,6 +1,6 @@
 # TELCOMA Global - 4G LTE Training (YouTube)
 
-## What is LTE Network Architecture
+## 1. What is LTE Network Architecture
 
 4G полностью пакетно-коммутируемая технология (Fully Packet-Switched Network).
 
@@ -27,7 +27,7 @@ eNodeB подключаются к MME и SGW через MME идет Control Pl
 
 eNodeB подключаются друг к другу через x2 интерфейс, а связь между U-TRAN и EPC через S1 интерфейсы, причем для control plane - S1-C, а для data plane S1-U.
 
-## LTE Drive Test Parameters
+## 2. LTE Drive Test Parameters
 
 **Параметры для радио-части LTE:**
 
@@ -118,5 +118,11 @@ RSSI включает в себя noise + Spower + Interference Power
 Хорошим показателем является, когда BLER < 10%
 
 **DL Throughput и UP Throughput** - показатели скорости DL и UP каналов
+
+## 3. LTE KPI
+
+KPI - Key Performance Indicator
+
+KPI показывает производительность сети. 
 
 [YouTube канал](https://www.youtube.com/channel/UCQLQxPH8mL0bnA7B3lIfNww/playlists)
