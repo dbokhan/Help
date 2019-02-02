@@ -79,7 +79,7 @@ eNodeB подключаются друг к другу через x2 интер�
 	I - Avg. received Interference
 	N - Avg. received Noise
 
-**RSSI - d**
+**RSSI - Reference Symbol Signal Intencity**
 
 RSSI включает в себя noise + Spower + Interference Power
 
