@@ -39,11 +39,11 @@ eNodeB подключаются друг к другу через x2 интер�
 
 4. SINR - Signal to Interference Noise Ratio
 
-5. COI - Channel Quality Index
+5. CQI - Channel Quality Index
 
 6. PCI - Physical Cell Identiry
 
-7. BLER - Block Error Ratio
+7. BLER - Block Error Rate
 
 8. DL Throughput
 
@@ -61,5 +61,62 @@ eNodeB подключаются друг к другу через x2 интер�
 
 	Диапазон значений является KPI (Key Performance Indicatior) и показывает эффективность работы, если RSRP меньше чем -140 dbm, то надо оптимизировать сеть
 
+**RSRQ - Reference Signal received Quality**
+
+Формула:
+
+	RSRQ = RSRP/(RSSI/N)
+
+	Диапазон значений от -3 до 19,5 dbm
+	(Большие значения говорят о хорошем качестве, меньшее о плохом)
+
+**SINR - Signal to Interference Noise Ratio**
+
+Формула:
+	SINR = S/I+N 
+
+	S - Avg. received signal power
+	I - Avg. received Interference
+	N - Avg. received Noise
+
+**RSSI - d**
+
+RSSI включает в себя noise + Spower + Interference Power
+
+Формула:
+	RSSI = 12 * N * RSRP
+
+	12 - кол-во sub-carriers (поднесущих)
+	N - кол-во ресурсных блоков (RB)
+
+**CQI - Channel Quality Index** - показывает качество DownLink
+
+Принимает значения от 1 до 15. 15 - хорошее значение
+
+**PCI - Physical Cell Identiry**
+
+Формула:
+
+	PCI = PSS + 3 * SSS
+
+	PSS - Primary Synchronization Signal, принимает значения 0; 1; 2
+	SSS - Secondary Synchronization Signal, принимает значения от 0 до 167
+
+**BLER - Block Error Rate** - общее кол-во ошибочных блоков деленое на общее кол-во переданных блоков
+
+Формула:
+
+	BLER = Total Erroneous Blocks / Total Blocks tx
+
+Пример:
+	Всего переданно 100 блоков.
+
+	Ошибочных блоков 20.
+
+	BLER = 20/100*100 = 20%
+
+Хорошим показателем является, когда BLER < 10%
+
+**DL Throughput и UP Throughput** - показатели скорости DL и UP каналов
 
 [YouTube канал](https://www.youtube.com/channel/UCQLQxPH8mL0bnA7B3lIfNww/playlists)
