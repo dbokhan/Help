@@ -279,14 +279,14 @@ APN (Access Point Name) храниться на каждом абонентск�
 
 ## Вопросы для самопроверки
 
-1. Which release of the 3GPP specifications includes the initial release of LTE?
+- Which release of the 3GPP specifications includes the initial release of LTE?
 
   - Release 6
   - Release 7
   - Release 8
   - Release 9
 
- 2. Which network elements form parts of the EPC?
+- Which network elements form parts of the EPC?
 
    - UE
    - eNB
@@ -295,7 +295,7 @@ APN (Access Point Name) храниться на каждом абонентск�
    - PDN-GW
    - HSS
 
-  3. Which interface links the eNB to the MME?
+- Which interface links the eNB to the MME?
 
     - Uu
     - S1
