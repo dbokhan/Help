@@ -177,6 +177,8 @@ APN (Access Point Name) храниться на каждом абонентск�
 
 ![](img/Control_Plane_SGSN_to_HLR.png)
 
+### Control Plane: SGSN to GGSN
+
 ![](img/Control_Plane_SGSN_to_GGSN.png)
 
 ### GPRS User Plane
