@@ -1,5 +1,9 @@
 # Структура современных сетей мобильной связи (GPRS,UMTS,LTE)
 
+## Оглавление
+
+[Архитектура 2G сетей](#2G)
+
 
 ## Эволюция сетей сотовой связи
 
@@ -39,7 +43,7 @@
 
 3. WiMAX 802.16m
 
-## Архитектура сетей 2G
+## Архитектура сетей 2G (#2G)
 
 ![](img/2G_architecture.png)
 
@@ -305,4 +309,8 @@ APN (Access Point Name) храниться на каждом абонентск�
     - S5
 
 [Ссылка на вебинар](https://www.youtube.com/watch?v=dEXsLV_LvL4&t)
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE
+" target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
