@@ -43,7 +43,7 @@
 
 3. WiMAX 802.16m
 
-(#2G)
+[#2G]
 ## Архитектура сетей 2G 
 
 ![](img/2G_architecture.png)
