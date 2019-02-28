@@ -19,6 +19,7 @@
   - [Протокол Diameter](#протокол-diameter)
 - [Вопросы для самопроверки](#вопросы-для-самопроверки)
 
+*Оглавление в логическом порядке
 
 ## Эволюция сетей сотовой связи
 
@@ -328,8 +329,4 @@ APN (Access Point Name) храниться на каждом абонентск�
     - S5
 
 [Ссылка на вебинар](https://www.youtube.com/watch?v=dEXsLV_LvL4&t)
-
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=https://youtu.be/dEXsLV_LvL4
-" target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
