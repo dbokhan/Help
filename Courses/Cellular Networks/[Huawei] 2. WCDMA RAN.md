@@ -93,3 +93,5 @@
 ![](img/WCDMA_RAN/WCDMA_releases2.png)
 
 ## Радиоинтерфейс технологии WCDMA
+
+![](img/WCDMA_RAN/WCDMA_call_processing_procedure.png)
