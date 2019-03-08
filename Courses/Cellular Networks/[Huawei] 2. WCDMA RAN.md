@@ -166,4 +166,6 @@ Primary Scrambling Codes (первые 512 кодов) делятся на 64 г
 
 *Secondary Scrambling Codes используются при использовании MIMO*
 
+**Мультиплексирование в Downlink:**
+
 ![](img/WCDMA_RAN/Multiplex_downlink.png)
