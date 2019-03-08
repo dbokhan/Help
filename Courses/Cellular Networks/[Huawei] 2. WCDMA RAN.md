@@ -186,9 +186,9 @@ Primary Scrambling Codes (первые 512 кодов) делятся на 64 г
 
 **Двоичная фазовая манипуляция (BPSK — binary phase-shift keying)** - фаза сигнала изменяется на 180 градусов
 
-![](img/WCDMA_RAN/bpsk.png)
+![](img/WCDMA_RAN/qpsk.png)
 
-![](img/WCDMA_RAN/bpsk2.png)
+![](img/WCDMA_RAN/qpsk2.png)
 
 **Квадратурной фазовой манипуляции (QPSK — Quadrature Phase Shift Keying или 4-PSK)** - чипы делятся на два потока. Четные чипы модулируют косинус, а нечетные синус.
 
