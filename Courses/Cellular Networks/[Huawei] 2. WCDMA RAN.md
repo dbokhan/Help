@@ -360,7 +360,10 @@ Radio Bear также может быть Signaling Radio Bear (в левой ч
 
 ### Физические каналы ###
 
-![](img/WCDMA_RAN/physical_channels.png)
+![](img/WCDMA_RAN/physical_channel.png)
 
 Традиционный радиокадр UMTS = 10 msec
+
+![](img/WCDMA_RAN/physical_channels_functions.png)
+
 
