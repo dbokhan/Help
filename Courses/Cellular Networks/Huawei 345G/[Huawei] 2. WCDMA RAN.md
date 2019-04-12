@@ -397,3 +397,4 @@ Radio Bear также может быть Signaling Radio Bear (в левой ч
 ![](img/WCDMA_RAN/physical_channels_functions.png)
 
 
+[Ссылка на вебинар](https://www.youtube.com/watch?v=Q9ij2wDW9xo&list=PLj9lxipB1mJzQ4PtFQKVKO-GPArSPYdS3&index=3)
