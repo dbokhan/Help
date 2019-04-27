@@ -108,5 +108,5 @@ HSPA+ это улучшение HSDPA и HSUPA.
 
 ## AMC (Adaptive Modulation & Coding)
 
-*AMC* выбирается в соответствии с [*CQI (Channel Quality Indicator)*](https://ytd2525.wordpress.com/2014/02/02/cqi-channel-quality-indicator/), который передается от UE на NodeB.
+**AMC** выбирается в соответствии с [CQI (Channel Quality Indicator)](https://ytd2525.wordpress.com/2014/02/02/cqi-channel-quality-indicator/), который передается от UE на NodeB.
 
