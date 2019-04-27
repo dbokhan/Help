@@ -105,3 +105,8 @@ HSPA+ это улучшение HSDPA и HSUPA.
 - **Быстрое формирование очереди на основе CQI и принципу справедливости (fairness)**
 
 - **Три новых физических канала**
+
+## AMC (Adaptive Modulation & Coding)
+
+*AMC* выбирается в соответствии с [*CQI (Channel Quality Indicator)*](https://ytd2525.wordpress.com/2014/02/02/cqi-channel-quality-indicator/), который передается от UE на NodeB.
+
