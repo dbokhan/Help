@@ -106,7 +106,10 @@ HSPA+ это улучшение HSDPA и HSUPA.
 
 - **Три новых физических канала**
 
-## AMC (Adaptive Modulation & Coding)
+### AMC (Adaptive Modulation & Coding)
 
 **AMC** выбирается в соответствии с [CQI (Channel Quality Indicator)](https://ytd2525.wordpress.com/2014/02/02/cqi-channel-quality-indicator/), который передается от UE на NodeB.
 
+**При хороших условиях в канале** - высокая скорость передачи (higher data rate), высокая скорость кодирования (coding rate is higher e.g. 3/4), схема модуляции 16QAM.
+
+**При плохих условиях в канале** - низкая скорость передачи (lower data rate), низкая скорость кодирования (coding rate is lower e.g. 1/3), схема модуляции QPSK.
