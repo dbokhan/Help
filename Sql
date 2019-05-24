@@ -1,0 +1,129 @@
+-- phpMyAdmin SQL Dump
+-- version 4.6.6deb4
+-- https://www.phpmyadmin.net/
+--
+-- Хост: localhost:3306
+-- Время создания: Май 24 2019 г., 09:47
+-- Версия сервера: 10.1.37-MariaDB-0+deb9u1
+-- Версия PHP: 7.0.33-0+deb9u3
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- База данных: `delivery`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `orders`
+--
+
+CREATE TABLE `orders` (
+  `idOrders` int(11) NOT NULL,
+  `id` int(11) NOT NULL,
+  `applicant` tinytext CHARACTER SET cp1251 COLLATE cp1251_bin NOT NULL,
+  `payer` tinytext CHARACTER SET cp1251 COLLATE cp1251_bin NOT NULL,
+  `paymentForm` tinytext CHARACTER SET cp1251 COLLATE cp1251_bin NOT NULL,
+  `fromCity` tinytext CHARACTER SET cp1251 COLLATE cp1251_bin NOT NULL,
+  `toCity` tinytext CHARACTER SET cp1251 COLLATE cp1251_bin NOT NULL,
+  `maxWeight` int(11) NOT NULL,
+  `maxLength` int(11) NOT NULL,
+  `maxHeight` int(11) NOT NULL,
+  `goodsType` tinytext CHARACTER SET cp1251 COLLATE cp1251_bin NOT NULL,
+  `yourEmail` tinytext CHARACTER SET cp1251 COLLATE cp1251_bin NOT NULL,
+  `senderName` tinytext CHARACTER SET cp1251 COLLATE cp1251_bin NOT NULL,
+  `recipientName` tinytext CHARACTER SET cp1251 COLLATE cp1251_bin NOT NULL,
+  `senderInn` tinytext CHARACTER SET cp1251 COLLATE cp1251_bin NOT NULL,
+  `recipientInn` tinytext CHARACTER SET cp1251 COLLATE cp1251_bin NOT NULL,
+  `senderStorageAddress` tinytext CHARACTER SET cp1251 COLLATE cp1251_bin NOT NULL,
+  `recipientStorageAddress` tinytext CHARACTER SET cp1251 COLLATE cp1251_bin NOT NULL,
+  `senderPhone` tinytext CHARACTER SET cp1251 COLLATE cp1251_bin NOT NULL,
+  `recipientPhone` tinytext CHARACTER SET cp1251 COLLATE cp1251_bin NOT NULL,
+  `senderContact` tinytext CHARACTER SET cp1251 COLLATE cp1251_bin NOT NULL,
+  `recipientContact` tinytext CHARACTER SET cp1251 COLLATE cp1251_bin NOT NULL,
+  `dopUpakovka` tinyint(4) NOT NULL,
+  `puzirkovaya` tinyint(4) NOT NULL,
+  `zhestkaya` tinyint(4) NOT NULL,
+  `pallet` tinyint(4) NOT NULL,
+  `dopInform` tinyint(4) NOT NULL,
+  `goodsInsurance` tinyint(4) NOT NULL,
+  `timeInsurance` tinyint(4) NOT NULL,
+  `arDocuments` tinyint(4) NOT NULL,
+  `soDocuments` tinyint(4) NOT NULL,
+  `opis` tinyint(4) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=armscii8;
+
+--
+-- Дамп данных таблицы `orders`
+--
+
+INSERT INTO `orders` (`idOrders`, `id`, `applicant`, `payer`, `paymentForm`, `fromCity`, `toCity`, `maxWeight`, `maxLength`, `maxHeight`, `goodsType`, `yourEmail`, `senderName`, `recipientName`, `senderInn`, `recipientInn`, `senderStorageAddress`, `recipientStorageAddress`, `senderPhone`, `recipientPhone`, `senderContact`, `recipientContact`, `dopUpakovka`, `puzirkovaya`, `zhestkaya`, `pallet`, `dopInform`, `goodsInsurance`, `timeInsurance`, `arDocuments`, `soDocuments`, `opis`) VALUES
+(6, 10, 'Отправитель', 'Получатель', 'Безналичная', 'Москва', 'Санкт-Петербург', 100, 50, 50, 'хрупкий', 'user@user.ru', 'ОАО Гугл', 'ОАО Индекс', '11111', '22222', 'ул. Пушкина, д.5', 'ул. Лермонтова, д.3', '+7495000000', '+7999111111', 'Александр', 'Петр', 1, 1, 0, 0, 1, 1, 0, 0, 1, 0),
+(7, 10, 'Получатель', 'Получатель', 'Наличная', 'Кисловодск', 'Иркутск', 200, 50, 50, 'цистерна', 'user@user.ru', 'ОАО Гугл', 'ОАО Индекс', '333333', '22222', 'ул. Шаляпина, д.1', 'ул. Менделеева, д.3', '+723456789', '+7999111111', 'Вадим', 'Петр', 0, 0, 0, 0, 1, 0, 1, 0, 1, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `users`
+--
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `login` tinytext NOT NULL,
+  `email` tinytext NOT NULL,
+  `pass` tinytext NOT NULL,
+  `name` tinytext CHARACTER SET cp1251 COLLATE cp1251_bin NOT NULL,
+  `sex` tinytext NOT NULL,
+  `role` tinytext NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=armscii8;
+
+--
+-- Дамп данных таблицы `users`
+--
+
+INSERT INTO `users` (`id`, `login`, `email`, `pass`, `name`, `sex`, `role`) VALUES
+(6, 'admin', 'admin@delivery.ru', '$2y$10$09NaXH0v4Gl4LVby9nv0Ze3lPrkCY0JYKiNto7nPjkQ3zbs9LNQ.a', 'Администратор', 'male', 'user'),
+(7, 'test2', 'test2@test.test', '$2y$10$eQEykchKH42RVbDm8IMvV./KHz1XGTFbrlRlQhlyFLhz5fvabpjnS', 'Mathias d\'Arras', 'male', 'user'),
+(10, 'user', 'user@user.ru', '$2y$10$kbR7Sh1K/EysxSGBuwOyv.rum8x9R4A45JzRtyHBtwfjfgvuCRfZ2', 'Бохан Дмитрий', 'male', 'user');
+
+--
+-- Индексы сохранённых таблиц
+--
+
+--
+-- Индексы таблицы `orders`
+--
+ALTER TABLE `orders`
+  ADD PRIMARY KEY (`idOrders`);
+
+--
+-- Индексы таблицы `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT для сохранённых таблиц
+--
+
+--
+-- AUTO_INCREMENT для таблицы `orders`
+--
+ALTER TABLE `orders`
+  MODIFY `idOrders` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+--
+-- AUTO_INCREMENT для таблицы `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
