@@ -108,4 +108,4 @@
 
 Перевод Дмитрий Бохан
 
-Оригинальная статья https://learn.sparkfun.com/tutorials/analog-vs-digital/all#digital-signals
+Оригинальная статья https://learn.sparkfun.com/tutorials/analog-vs-digital/
