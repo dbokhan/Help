@@ -19,3 +19,4 @@ As subscribers can roam freely in the network, the MSC is also responsible for t
 - If no active connection exists between the network and the mobile device, the MS has to report a change of location to the network to be reachable for incoming calls and SMS messages. This procedure is called location update.
 
 - If the subscriber changes their location while a connection is established with the  network, the MSC is part of the process that ensures that the connection is not interrupted and is rerouted to the next cell. This procedure is called handover.
+
