@@ -30,7 +30,7 @@ The Short Messaging Service Center (SMSC) is used to store and forward short mes
 
 **3. Name the most important components of the GSM radio network (BSS) and their tasks.**
 
-The Base Transciever Station (BTS) replace the wired connection to the subscriber with a wireless connection,  which is also referred to as the air interface.
+The Base Transciever Station (BTS) replaces the wired connection to the subscriber with a wireless connection,  which is also referred to as the air interface.
 
 The GSM Air Interface - the transmission path between the BTS and the mobile device is referred to, in the  GSM specifications, as the air interface or the Um interface.
 
