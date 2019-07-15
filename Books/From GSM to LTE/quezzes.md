@@ -24,5 +24,8 @@ As subscribers can roam freely in the network, the MSC is also responsible for t
 
 The Visitor Location Register (VLR) - which holds the record of each subscriber that is currently served by the MSC. These records are only copies of the original records, which are stored in the HLR. While the standards allow implementation of the VLR as an independent  hardware component, all vendors have implemented the VLR simply as a software comoponent in the MSC.
 
+The Home Location Register (HLR) is the subscriber database of a GSM network. It contains a record for each  subscriber, with information about the individually available services.
+
+The Short Messaging Service Center (SMSC) is used to store and forward short messages.
 
 
