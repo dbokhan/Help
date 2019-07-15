@@ -28,4 +28,14 @@ The Home Location Register (HLR) is the subscriber database of a GSM network. It
 
 The Short Messaging Service Center (SMSC) is used to store and forward short messages.
 
+**3. Name the most important components of the GSM radio network (BSS) and their tasks.**
+
+The Base Transciever Station (BTS) replace the wired connection to the subscriber with a wireless connection,  which is also referred to as the air interface.
+
+The GSM Air Interface - the transmission path between the BTS and the mobile device is referred to, in the  GSM specifications, as the air interface or the Um interface.
+
+The Base Station Controller (BSC) is responsible for the establishment, release and maintenance of  all connections for cells that are connected to it.
+
+The Transcoding and Rate Adaptation Unit (TRAU), which is located between the MSC and a BSC and controlled by the BSC, performs the compression and decompression of the voice data stream.
+
 
