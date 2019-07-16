@@ -42,3 +42,11 @@ The Transcoding and Rate Adaptation Unit (TRAU), which is located between the MS
 
 To allow the base station to communicate with several subscribers simultaneously, two methods are used. The first  method is frequency division multiple access (FDMA), which means that users communicate with the base station on different frequencies. The second method used is time division multiple access (TDMA). GSM uses carrier frequencies with a bandwidth of 200kHz over which up to eight subscribers can communicate with the base station simultaneously.
 
+**5. Which steps are neccesery to digitize a speech signal in mobile device before it can be send over the GSM air interface?**
+
+**6. What is a handover and which network components are involved?**
+
+As subscribers can roam freely through  the network while a call is ongoing, it can happen that the subscriber roams out of the  coverage area of the cell in which the call was initially established. In this case, the BSC  has to redirect the call to the appropriate cell. This procedure is called handover.  
+
+
+
