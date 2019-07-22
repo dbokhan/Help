@@ -55,5 +55,5 @@ The HLR then determines the subscriber’s IMSI by using the MSISDN to search  t
 
 The G-MSC uses the MSRN to forward the call to the V-MSC. This is possible as the MSRN not only temporarily identifies the subscriber in the V-MSC/VLR but also  uniquely identifies the V-MSC to external switches. To forward the call from the  G-MSC to the V-MSC, an IAM message is used again, which, instead of the MSISDN, contains the MSRN to identify the subscriber. This has been done as it is possible, and  even likely, that there are transit switching centers between the G-MSC and V-MSC,  which are thus able to forward the call without querying the HLR themselves.
 
-**8. How is a subscriber authenticated in the GSM network? Why is an authentication neccesery?
+**8. How is a subscriber authenticated in the GSM network? Why is an authentication neccesery?**
 
