@@ -82,20 +82,22 @@ As the message waiting flag is also set in the HLR, the SMS also reaches a subsc
 
 The RISC processor is responsible for the following tasks:
 
-● handling of information that is received via the different signaling channels (BCCH,  PCH, AGCH, PCH and so on)
+- handling of information that is received via the different signaling channels (BCCH,  PCH, AGCH, PCH and so on)
 
-● call establishment (DTAP)
+- call establishment (DTAP)
 
-● GPRS management and GPRS data flow
+- GPRS management and GPRS data flow
 
-● parts of the transmission chain, like channel coder, interleaver and cipherer (dedicated  hardware component in some designs)
+- parts of the transmission chain, like channel coder, interleaver and cipherer (dedicated  hardware component in some designs)
 
-● mobility management (network search, cell reselection, location update, handover,  timing advance, etc.)
+- mobility management (network search, cell reselection, location update, handover,  timing advance, etc.)
 
-● connections via external interfaces like Bluetooth, infrared and Universal Serial  Bus (USB)
+- connections via external interfaces like Bluetooth, infrared and Universal Serial  Bus (USB)
 
-● user interface (keypad, display, graphical user interface)
+- user interface (keypad, display, graphical user interface)
 
 The DSP is another important component of a GSM chipset. Its main task is the  decoding of the incoming signal and FR, EFR, HR or AMR speech compression. In  GSM, signal decoding starts with the analysis of the training sequence of a burst. As the DSP is aware of the composition of the training sequence of a frame, the DSP can calculate a filter that is then used to decode the data part of the  burst. This increases the probability that the data can be correctly reconstructed.
 
-**11. How is data stored on the SIM card?
+**11. How is data stored on the SIM card?**
+
+From a logical point of view, data are stored on a GSM SIM card in directories and  files, in a manner similar to the storage on a PC’s hard drive. The file and folder struc￾tures are specified in 3GPP TS 31.102 [34]. In the specification, the root directory is  called the main file (MF), which is somewhat confusing at first. Subsequent directories  are called dedicated files (DF), and normal files are called elementary files (EF). As there  is only a very limited amount of memory on the SIM card, files are not identified via file  and directory names. Instead, hexadecimal numbers with a length of four digits are  used, which require only 2 B memory.
