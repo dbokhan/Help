@@ -78,3 +78,8 @@ If the subscriber is not reachable because the battery of the mobile device is e
 
 As the message waiting flag is also set in the HLR, the SMS also reaches a subscriber  who has switched off the mobile device in London, for example, and switches it on again  after a flight to Los Angeles. When the mobile device is switched on in Los Angeles, the  visited MSC reports the location to the subscriber’s home HLR (location update). The  HLR then sends a copy of the user’s subscription information to the MSC/VLR in Los  Angeles including the message waiting flag and thus the SMSC can also be notified that  the user is reachable again.
 
+**10. Which tasks are performed by the RISC processor and which tasks are performed by the DSP in a mobile device?**
+
+The RISC processor is responsible for the following tasks:
+● handling of information that is received via the different signaling channels (BCCH,  PCH, AGCH, PCH and so on);
+● call establishment (DTAP);
