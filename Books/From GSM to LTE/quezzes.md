@@ -35,17 +35,18 @@ The Home Location Register (HLR) is the subscriber database of a GSM network. It
 The Short Messaging Service Center (SMSC) is used to store and forward short messages.
 
 >Author's Answer 2: 
+>
 >The GSM NSS consists of at least of the following network components:
 >
->MSC: The Mobile Switching Center, which includes the Visitor Location Register, is responsible for connecting calls and mobility management.
+> - MSC: The Mobile Switching Center, which includes the Visitor Location Register, is responsible for connecting calls and mobility management.
 >
->The Home Location Register, which stores subscriber information
+> - The Home Location Register, which stores subscriber information
 >
->Service Control Points, which handle services like prepaid or location based billing applications
+> - Service Control Points, which handle services like prepaid or location based billing applications
 >
->SMS Service Center
+> - SMS Service Center
 >
->Voice Mail Systems
+> - Voice Mail Systems
 
 **3. Name the most important components of the GSM radio network (BSS) and their tasks.**
 
