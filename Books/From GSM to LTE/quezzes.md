@@ -6,6 +6,7 @@ The PCM algorithm is used to digitize the voice signal, which makes full use of 
 
 
 > Author's Answer 1:
+>
 In a circuit switched digital telecommunication network a speech channel usually uses a 64 kbit/s timeslot. The pulse code modulation (PCM) algorithm is used to convert an analog voice signal for digital transmission.
 
 
