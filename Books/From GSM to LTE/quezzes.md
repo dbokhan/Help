@@ -100,7 +100,7 @@ The DSP is another important component of a GSM chipset. Its main task is the  d
 
 **11. How is data stored on the SIM card?**
 
-From a logical point of view, data are stored on a GSM SIM card in directories and  files, in a manner similar to the storage on a PC’s hard drive. The file and folder structures are specified in 3GPP TS 31.102 [34]. In the specification, the root directory is  called the main file (MF), which is somewhat confusing at first. Subsequent directories  are called dedicated files (DF), and normal files are called elementary files (EF). As there  is only a very limited amount of memory on the SIM card, files are not identified via file  and directory names. Instead, hexadecimal numbers with a length of four digits are  used, which require only 2 B memory.
+From a logical point of view, data are stored on a GSM SIM card in directories and  files, in a manner similar to the storage on a PC’s hard drive. The file and folder structures are specified in 3GPP TS 31.102. In the specification, the root directory is  called the main file (MF), which is somewhat confusing at first. Subsequent directories  are called dedicated files (DF), and normal files are called elementary files (EF). As there  is only a very limited amount of memory on the SIM card, files are not identified via file  and directory names. Instead, hexadecimal numbers with a length of four digits are  used, which require only 2 B memory.
 
 
 **12. What is CAMEL and for which service is it typically used?**
