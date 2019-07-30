@@ -81,5 +81,21 @@ As the message waiting flag is also set in the HLR, the SMS also reaches a subsc
 **10. Which tasks are performed by the RISC processor and which tasks are performed by the DSP in a mobile device?**
 
 The RISC processor is responsible for the following tasks:
-● handling of information that is received via the different signaling channels (BCCH,  PCH, AGCH, PCH and so on);
-● call establishment (DTAP);
+
+● handling of information that is received via the different signaling channels (BCCH,  PCH, AGCH, PCH and so on)
+
+● call establishment (DTAP)
+
+● GPRS management and GPRS data flow
+
+● parts of the transmission chain, like channel coder, interleaver and cipherer (dedicated  hardware component in some designs)
+
+● mobility management (network search, cell reselection, location update, handover,  timing advance, etc.)
+
+● connections via external interfaces like Bluetooth, infrared and Universal Serial  Bus (USB)
+
+● user interface (keypad, display, graphical user interface)
+
+The DSP is another important component of a GSM chipset. Its main task is the  decoding of the incoming signal and FR, EFR, HR or AMR speech compression. In  GSM, signal decoding starts with the analysis of the training sequence of a burst. As the DSP is aware of the composition of the training sequence of a frame, the DSP can calculate a filter that is then used to decode the data part of the  burst. This increases the probability that the data can be correctly reconstructed.
+
+**11. How is data stored on the SIM card?
