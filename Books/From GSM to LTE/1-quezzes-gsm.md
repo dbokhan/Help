@@ -116,7 +116,7 @@ RAND, SRES and Kc are then returned to the MSC, which then performs authenticati
 In the next step, the MSC sends the RAND inside an Authentication Request message to  the mobile device. The mobile device forwards the RAND to the SIM card, which then uses  the Ki and the authentication A3 algorithm to generate a signed response (SRES* ). The  SRES*  is returned to the mobile device and then sent back to the MSC inside an Authentication  Response message. The MSC then compares SRES and SRES* , and if they are equal, the  subscriber is authenticated and allowed to proceed with the communication.
 
 >Author's Answer 8:
-
+>
 >In order to authenticate a subscriber, the MSC queries the Authentication Center for the Authentication Triplets of the subscriber. Elements of each triplet are a random number (RAND) and a response value (SRES) which is generated from the random number with an authentication algorithm. The MSC then sends the random number to the mobile station. The MS forwards the random number to the SIM card which computes the SRES. This value is then sent back to the network. The MSC then compares the SRES computed by the authentication center and the SRES computed by the SIM card. The two values can only match if the authentication center and the SIM card have used the same secret key to generate the signed response from the same random number.
 
 **9. How is an SMS message exchanged between two subscribers?**
