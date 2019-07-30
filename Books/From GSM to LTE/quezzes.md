@@ -58,6 +58,16 @@ The Base Station Controller (BSC) is responsible for the establishment, release 
 
 The Transcoding and Rate Adaptation Unit (TRAU), which is located between the MSC and a BSC and controlled by the BSC, performs the compression and decompression of the voice data stream.
 
+>Author's Answer 3: 
+>
+>The GSM BSS consists of the following network components:
+>
+> - The Base Station Controller, which controls the channels on the air interface. It is also responsible for power control, timing advance control and handovers.
+>
+> - Transcoding and Rate Adaptation units convert the speech codecs used in the BSS into 64 kbit/s PCM coded channels used in the core network. (Note: The TRAU is usually co-located with the MSC in order to minimize the number of required transmission links between the MSCs and the BSCs).
+>
+> - The Base Transceiver Stations (BTS): A high number of base stations are connected to a base station controller. They are responsible for transferring data streams over the air interface.
+
 **4. How is BTS able to communicate with several subscribers at the same time?**
 
 To allow the base station to communicate with several subscribers simultaneously, two methods are used. The first  method is frequency division multiple access (FDMA), which means that users communicate with the base station on different frequencies. The second method used is time division multiple access (TDMA). GSM uses carrier frequencies with a bandwidth of 200kHz over which up to eight subscribers can communicate with the base station simultaneously.
