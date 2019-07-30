@@ -5,7 +5,7 @@
 The PCM algorithm is used to digitize the voice signal, which makes full use of the available 64 kbit/s bandwidth of an E-1 timeslot to encode the voice signal
 
 
-> Answer 1:
+> Author's Answer 1:
 In a circuit switched digital telecommunication network a speech channel usually uses a 64 kbit/s timeslot. The pulse code modulation (PCM) algorithm is used to convert an analog voice signal for digital transmission.
 
 
@@ -32,6 +32,19 @@ The Visitor Location Register (VLR) - which holds the record of each subscriber 
 The Home Location Register (HLR) is the subscriber database of a GSM network. It contains a record for each  subscriber, with information about the individually available services.
 
 The Short Messaging Service Center (SMSC) is used to store and forward short messages.
+
+>Author's Answer 2: 
+>The GSM NSS consists of at least of the following network components:
+>
+>MSC: The Mobile Switching Center, which includes the Visitor Location Register, is responsible for connecting calls and mobility management.
+>
+>The Home Location Register, which stores subscriber information
+>
+>Service Control Points, which handle services like prepaid or location based billing applications
+>
+>SMS Service Center
+>
+>Voice Mail Systems
 
 **3. Name the most important components of the GSM radio network (BSS) and their tasks.**
 
