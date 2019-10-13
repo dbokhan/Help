@@ -228,7 +228,9 @@ EOL - выход из жизни релиза IOSа (FCS+78), циска не п
 > rommon> IP ADDRESS=192.168.1.11
 >
 > rommon> IP SUBNET MASK=255.255.255.0
+>
 > rommon> DEFAULT GATEWAY=192.168.1.1
+>
 > rommon> TURBOBOOT=on, disk0, clear ! format, если не требуется сохранение конфигурации
 >
 > sync
