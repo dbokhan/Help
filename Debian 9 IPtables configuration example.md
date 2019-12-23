@@ -12,15 +12,15 @@
     -A INPUT -m conntrack –ctstate ESTABLISHED,RELATED -j ACCEPT
 
     # FTP
-    -A INPUT -p tcp –dport 20 -j ACCEPT
-    -A INPUT -p tcp –dport 21 -j ACCEPT
+    -A INPUT -p tcp --dport 20 -j ACCEPT
+    -A INPUT -p tcp --dport 21 -j ACCEPT
     -A INPUT -m state –state NEW -m tcp -p tcp –dport 1024:65535 -j ACCEPT
 
     # HTTP
-    -A INPUT -p tcp –dport 80 -j ACCEPT
+    -A INPUT -p tcp --dport 80 -m comment --comment "WEB ALLOW" -j ACCEPT
 
     # mySQL
-    -A INPUT -p tcp –dport 3306 -j ACCEPT
+    -A INPUT -p tcp --dport 3306 -j ACCEPT
 
     # GENERAL RULES
     -P INPUT DROP
