@@ -6,7 +6,7 @@
 
     # PPTP
     -A INPUT -p 47 -j ACCEPT
-    -A INPUT -p tcp –dport 1723 -j ACCEPT
+    -A INPUT -p tcp --dport 1723 -j ACCEPT
 
     # ALLOW ESTABLISHED CONNECTION FROM INSIDE
     -A INPUT -m conntrack –ctstate ESTABLISHED,RELATED -j ACCEPT
