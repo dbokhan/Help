@@ -59,3 +59,15 @@
 #!/bin/sh
 /sbin/iptables-restore < “iptabls_config_file_name(without_quotes)”
 ```
+
+***
+
+На Debian можно использовать 
+
+```sudo apt-get install iptables-persistent```
+
+Который сохраняет в файлы /etc/iptables/rules.v4 и /etc/iptables/rules.v6 правила iptables командой:
+
+```sudo netfilter-persistent save```
+
+А после подгружает их после перезагрузки.
