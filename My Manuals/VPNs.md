@@ -8,7 +8,7 @@
 
 * Включенный IP Routing
 
-В файле "/etc/sysctl.conf"
+В файле "/etc/sysctl.conf":
 ```
 net.ipv4.ip_forward=1
 ```
