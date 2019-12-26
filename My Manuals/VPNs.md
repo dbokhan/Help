@@ -54,6 +54,11 @@ lcp-echo-interval 30
 lcp-echo-failure 4
 noipx
 ```
+### Настройка пользователей для аутентификации в файле "/etc/ppp/chap-secrets"
+
+```
+username * password *
+```
 
 ### Запуск и отладка
 
