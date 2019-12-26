@@ -33,3 +33,12 @@ lcp-echo-interval 30
 lcp-echo-failure 4
 noipx
 ```
+
+### Запуск и отладка
+
+```
+/etc/init.d/xl2tpd start
+/etc/init.d/xl2tpd status
+cat /var/log/syslog
+ip route
+```
