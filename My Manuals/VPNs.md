@@ -3,7 +3,7 @@
 
 ## Теоретическая информация по L2TP (Без шифрования)
 
-### Формат кадра с L2TP
+### Инкапсуляция L2TP
 ![](https://www.researchgate.net/profile/Adrian_Graur2/publication/287458379/figure/fig4/AS:314843556007939@1452075961245/L2TP-Tunnel-Data-Frame-Format_W640.jpg)
 
 ## L2TP Server Минимальная настройка на примере Debian
