@@ -18,7 +18,12 @@ net.ipv4.ip_forward=1
 sysctl -p
 ```
 
-* Открытый UDP порт 1701.
+* Открытый UDP порт 1701:
+
+
+```
+iptables -A INPUT -p udp -m udp --dport 1701 -m comment --comment L2TP -j ACCEPT
+```
 
 ### Установка
 
