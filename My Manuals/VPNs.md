@@ -4,12 +4,13 @@
 
 ## L2TP Server Минимальная настройка на примере Debian
 
-### Установка 
+### Установка
+
 ```
 apt-get install xl2tpd ppp
 ```
 
-### Настройка l2tp в файле "/etc/xl2tpd/xl2tpd.conf"
+### Настройка L2TP в файле "/etc/xl2tpd/xl2tpd.conf"
 
 ```
 [global]
@@ -20,4 +21,15 @@ apt-get install xl2tpd ppp
  refuse pap = yes ; * Не использовать аутентификацию по pap
  require authentication = yes ; * Запрашивать аутентификацию
  pppoptfile = /etc/ppp/options ; * Ссылка на файл конфигурации PPP
+```
+
+### Настройка PPP в файле "/etc/ppp/options"
+
+```
+asyncmap 0
+auth
+hide-password
+lcp-echo-interval 30
+lcp-echo-failure 4
+noipx
 ```
