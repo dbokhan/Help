@@ -8,7 +8,7 @@ openssl genrsa -aes256 -out ca.key 4096
 
 [Команда genrsa](https://www.openssl.org/docs/manmaster/man1/genrsa.html) - генерирует приватный RSA ключ.
 
-- **Опция -aes256** - шифрует ключ перед выводов в файл.
+- **Опция -aes256** - шифрует ключ перед выводом в файл.
 
 - **Опция -out** - выводит ключ в указанный файл.
 
