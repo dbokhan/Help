@@ -9,5 +9,5 @@
   - [SSH Public Key Authentication on Cisco IOS](https://networklessons.com/uncategorized/ssh-public-key-authentication-cisco-ios/)
   - [Типы VPN соединений (Семенов Вадим)](https://linkmeup.ru/blog/152.html)
   - [Cisco IOS](https://drive.google.com/drive/folders/102jxZ9ECpe6ZFtXYdK_81iEVuuFoGOGR)
-- **Git**
-  - [Markdown: Syntax](https://daringfireball.net/projects/markdown/syntax)
+- **VPN**
+  - [ASA L2TP - Windows native client](https://www.cisco.com/c/en/us/support/docs/ip/layer-two-tunnel-protocol-l2tp/200340-Configure-L2TP-Over-IPsec-Between-Window.html)
