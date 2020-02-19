@@ -10,4 +10,6 @@
   - [Типы VPN соединений (Семенов Вадим)](https://linkmeup.ru/blog/152.html)
   - [Cisco IOS](https://drive.google.com/drive/folders/102jxZ9ECpe6ZFtXYdK_81iEVuuFoGOGR)
 - **VPN**
-  - [ASA L2TP - Windows native client](https://www.cisco.com/c/en/us/support/docs/ip/layer-two-tunnel-protocol-l2tp/200340-Configure-L2TP-Over-IPsec-Between-Window.html)
+  - [ASA RA L2TP - Windows native client](https://www.cisco.com/c/en/us/support/docs/ip/layer-two-tunnel-protocol-l2tp/200340-Configure-L2TP-Over-IPsec-Between-Window.html)
+  - [ASA RA IPsec - Android native client](https://weberblog.net/cisco-asa-remote-access-vpn-for-android/)
+  
